@@ -1,0 +1,10 @@
+---
+applications:
+- name: tcp-python-cf
+  memory: 128MB
+  disk_quota: 256MB
+  buildpack: https://github.com/cloudfoundry/python-buildpack.git
+  command: ./start.sh
+  health-check-type: process
+  routes:
+  - route: tcp.apps.pcfone.io:10030
