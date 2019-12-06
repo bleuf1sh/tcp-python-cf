@@ -1,7 +1,7 @@
 ---
 applications:
 - name: tcp-python-cf
-  memory: 80MB
+  memory: 100MB
   disk_quota: 256MB
   buildpack: https://github.com/cloudfoundry/python-buildpack.git
   command: ./start.sh
